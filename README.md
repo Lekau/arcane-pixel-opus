@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# Lekau Something Special - Portfolio Website
 
-## Project info
+This is a portfolio website to showcase my skills to interested parties like employers and clients.
 
-**URL**: https://lovable.dev/projects/95445ef3-39ba-4726-9720-87094efae2bc
+## Table of Contents
 
-## How can I edit this code?
+1. [Project Title and Description](#project-title-and-description)
+2. [Installation Instructions](#installation-instructions)
+3. [Basic Usage Examples](#basic-usage-examples)
+4. [Features Overview](#features-overview)
+5. [Configuration Options](#configuration-options)
+6. [Troubleshooting Section](#troubleshooting-section)
+7. [Contributing Guidelines](#contributing-guidelines)
+8. [License Information](#license-information)
+9. [Code Structure Overview](#code-structure-overview)
 
-There are several ways of editing your application.
+## Project Title and Description
 
-**Use Lovable**
+**Project Name:** Lekau Something Special
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/95445ef3-39ba-4726-9720-87094efae2bc) and start prompting.
+**Description:** This is a portfolio website designed to showcase my skills and projects to potential employers and clients. It provides an interactive and visually appealing presentation of my capabilities.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Installation Instructions
 
-**Use your preferred IDE**
+To get a local copy up and running, please follow these simple steps.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+You need to have Node.js and npm installed on your machine.
 
-Follow these steps:
+### Steps
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository:**
+    ```sh
+    git clone <YOUR_GIT_URL>
+    ```
+2. **Navigate to the project directory:**
+    ```sh
+    cd arcane-pixel-opus
+    ```
+3. **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+4. **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+    You can view the website in your browser at the local address provided in your terminal.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Basic Usage Examples
 
-# Step 3: Install the necessary dependencies.
-npm i
+Once the development server is running, you can navigate through the different sections of the portfolio:
+-   **Home:** The main landing page.
+-   **About:** Information about my background and skills.
+-   **Projects:** A showcase of my work.
+-   **Contact:** A way to get in touch with me.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Features Overview
 
-**Edit a file directly in GitHub**
+-   **Navigation:** Easy-to-use navigation to browse through the portfolio sections.
+-   **Social Media Links:** Links to my social media profiles.
+-   **Animations:** Engaging animations to enhance user experience.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Technologies Used
 
-**Use GitHub Codespaces**
+-   **TypeScript**
+-   **React**
+-   **Vite**
+-   **Tailwind CSS**
+-   **shadcn/ui**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Configuration Options
 
-## What technologies are used for this project?
+The project is configured using the following files:
+-   `vite.config.ts`: Vite configuration.
+-   `tailwind.config.ts`: Tailwind CSS configuration.
+-   `tsconfig.json`: TypeScript configuration.
 
-This project is built with:
+## Troubleshooting Section
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+If you encounter any issues, try the following:
+-   Ensure all dependencies are installed correctly by running `npm install`.
+-   If you face issues with dependencies, try deleting the `node_modules` folder and `bun.lockb` file, and then run `npm install` again.
 
-## How can I deploy this project?
+## Contributing Guidelines
 
-Simply open [Lovable](https://lovable.dev/projects/95445ef3-39ba-4726-9720-87094efae2bc) and click on Share -> Publish.
+Contributions are welcome! Please open an issue to discuss what you would like to change or add.
 
-## Can I connect a custom domain to my Lovable project?
+## License Information
 
-Yes, you can!
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Code Structure Overview
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The source code is organized as follows:
+
+-   `src/components`: Contains reusable UI components.
+-   `src/hooks`: Custom React hooks.
+-   `src/lib`: Utility functions.
+-   `src/pages`: Main pages of the application.

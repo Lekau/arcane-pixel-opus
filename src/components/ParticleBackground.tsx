@@ -1,5 +1,40 @@
 import { useEffect, useRef } from "react";
 
+/**
+ * Renders a canvas element with an animated particle background.
+ *
+ * This component creates a full-screen canvas with particles that move around
+ * and connect to each other when they are close. It's designed to be a
+ * decorative background element. The animation is self-contained and runs
+ * within a `useEffect` hook.
+ *
+ * @component
+ * @returns {JSX.Element} A canvas element that fills the screen and displays the particle animation.
+ *
+ * @example
+ * // To use this component, simply include it in your layout.
+ * // It will automatically position itself as a background.
+ * import ParticleBackground from './ParticleBackground';
+ *
+ * function App() {
+ *   return (
+ *     <div>
+ *       <ParticleBackground />
+ *       <main>
+ *         // Your other content here
+ *       </main>
+ *     </div>
+ *   );
+ * }
+ *
+ * @remarks
+ * - The component takes no props.
+ * - It uses `window.innerWidth` and `window.innerHeight` and resizes with the window.
+ * - The canvas has `pointer-events-none` so it won't interfere with other UI elements.
+ * - The particle colors, count (100), and connection distance (120px) are hardcoded.
+ * - The component cleans up the resize event listener on unmount.
+ * - It will not render the animation if the canvas or its 2D context cannot be initialized, failing silently.
+ */
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

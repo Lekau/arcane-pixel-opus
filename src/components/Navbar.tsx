@@ -3,14 +3,30 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+/**
+ * Navbar Component
+ *
+ * A responsive animated navigation bar that adapts between desktop and mobile.
+ * - Applies a glassmorphic background when the user scrolls.
+ * - Uses Framer Motion for smooth entrance and hover animations.
+ * - Includes a collapsible mobile menu.
+ *
+ * @example
+ * ```tsx
+ * <Navbar />
+ * ```
+ * @returns {JSX.Element} The navigation bar component.
+ */
+const Navbar = (): JSX.Element => {
+  // Tracks scroll state for background transition
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Toggles visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Listen to scroll events to toggle background blur
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
